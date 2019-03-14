@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/dl-zc.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+	</head>
+	<body>
+		<img class="img" src="../images/dl_tou.png" height="104" width="1258" alt="" />
+		<div id="dl_main" style="height: 460px;background-image: url(https://haitao.nos.netease.com/96db8510-65c4-490d-bfdb-cca1d5ab1842_1920_520.jpg?imageView&thumbnail=1920x0&quality=90);;">
+			
+			<div class="dlzhuce" style="margin-left: 800px;background: white;">
+
+				<div class="tou " style="display: inline-block;background: #ECECEC;">
+					<div class="deng sjh fl ">手机号登录</div>
+					<div class="deng yx fl">邮箱登录</div>
+				</div>
+				<div id="dl">
+					<p>
+						<input class="tel" type="text" name="user" class="login-box-cen-form-input w218" placeholder="请输入手机号" id="login_phone" />
+					     <label class="err " id="login_phone_text">手机号错误</label>
+					</p>
+					<p>
+						<input class="tel" type="text" name="pass" class="login-box-cen-form-input w218" placeholder="请输入密码" id="login_password"  />
+					   <label class="err err-top40" id="login_password_text">请输入密码</label>
+					</p>
+					
+					<!-- <p class="verty">
+						<input  class="c_code_msg" type="text" style="margin-right: 10px;" placeholder="请输入验证码" />
+						<span class="msgs">获取短信验证码</span>
+					</p> -->
+				</div>
+				
+				<button class="dl_btn" id="login_submit">登录</button>
+				<p id="msg">
+					
+				</p>
+				<div class="denglu"><input type="checkbox" class="gou" /> 10天免登录<span class="yudao fr">遇到问题？</span></div>
+			</div>
+			
+			</div>
+		</div>
+	</body>
+	<script src="../lib/jquery-1.9.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/tbdValidate.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">	
+		$(function(){
+			//demo1
+			var regconfig=[
+					{eleinput:"login_phone",eletext:"login_phone_text",rule:[{reg:/^.+$/,text:"手机号不能为空"},{reg:/^1[34578]\d{9}$/,text:"手机号格式错误"}]},
+					{eleinput:"login_password",eletext:"login_password_text",rule:[{reg:/^.+$/,text:"密码不能为空"}]}
+				];
+			tbdValidate(
+				regconfig,
+				{
+					elesubmit:"login_submit",//提交按钮
+					funsubmit:function(){//验证通过可提交回调				
+						//信息提交接口
+						alert("成功");				
+					},
+					funerr:function(){//不可提交回调
+						
+					},
+		            funerrlist:function(errlist){
+		                $('#'+ errlist[0]).focus();
+		            }	
+				}
+			);	
+			class Login{
+			    constructor(){
+			        this.url = "http://www.liyangyf.com/ctrl/login.php";
+			        this.init()
+			    }
+			    init(){
+			        var that = this;
+			        $(".dl_btn").click(function(){
+			            that.load()
+			        })
+			    }
+			    load(){
+			        var that = this;
+			        $.ajax({
+			            url:this.url,
+			            data:{
+			                user:$("#user").val(),
+			                pass:$("#pass").val()
+			            },
+			            success:function(res){
+			                switch(res){
+			                    case "0":
+			                        $("#msg").html("用户名密码不符");
+			                        break;
+			                    case "1":
+			                        $("#msg").html("请重新登录");
+			                        break;
+			                    default:
+			                        that.res = JSON.parse(res);
+			                        $("#msg").html("登录成功");
+			                        that.display()
+			                }
+			            },
+			           
+			        })
+			    }
+			    display(){
+			        console.log(this.res)
+			    }
+			}
+			
+			
+			new Login()
+		})
+	</script>
+</html>

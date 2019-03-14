@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+	<style type="text/css">
+		p{height: 50px;}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/dl-zc.css"/>
+</head>
+<body>
+
+	<img class="img" src="../images/dl_tou.png" height="104" width="1258" alt="" />
+	<div id="dl_main" style="height: 460px;background-image: url(https://haitao.nos.netease.com/96db8510-65c4-490d-bfdb-cca1d5ab1842_1920_520.jpg?imageView&thumbnail=1920x0&quality=90);;">
+		
+		<div class="dlzhuce" class="register-box-con" style="margin-left: 800px;background: white;">
+	
+			<div class="tou " style="display: inline-block;background: #ECECEC;">
+				<div class="deng sjh fl " style="font:700 18px/53px"";color: red;">欢迎注册</div>
+				<div class="deng yx fl" style="font-size: 14px">已有账号？<span style="font-size: 12px;color: #0099FF;">去登陆&gt;</span></div>
+			</div>
+			<div id="dl" style="padding-left: 26px;">
+				<p  class="register-box-cen-form clearfix mar-bottom20">
+					<input class="tel" class="login-box-cen-form-input w358" type="text" name="user" id="reg_phone" value="" placeholder="请输入手机号" />
+				     <label class="err " id="reg_phone_text">手机号错误</label>
+				</p>
+				<p>
+					<input class="tel" class="login-box-cen-form-input w358" type="text" name="pass" id="reg_password" value="" placeholder="请输入密码" />
+				    <label class="err " id="reg_password_text">密码错误</label>
+
+				</p>
+				
+				<p class="verty"  >
+					<input  class="c_code_msg" type="text" style="margin-right: 10px;" id="reg_mescode" placeholder="请输入验证码" />
+					<button style="width:100px;height: 30px;background: red;margin: 0;border-radius: 5px;float: right;" id="reg_mescode_btn" able="able">获取验证码</button>
+				    <label class="err " id="reg_mescode_text">短信验证码错误</label>
+
+				</p>
+			</div>
+			
+			<button class="dl_btn" id="reg_submit" style="margin-left: 55px;" >注册</button>
+			<p id="msg">
+				
+			</p>
+			<div class="denglu">
+				
+				<input type="checkbox" name="" id="" style="outline-style:normal;"> 10天免登录<span class="yudao fr">遇到问题？</span>
+				
+			</div>
+		</div>
+		
+		</div>
+	</div>
+</body>
+<script src="../lib/jquery-1.9.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="../lib/tbdValidate.js" type="text/javascript" charset="utf-8"></script>
+
+
+<script>
+     
+	var mesdong=null;
+		var mestime=60;
+		$("#reg_mescode_btn").click(function(){	
+			var phoneval=$.trim($("#reg_phone").val());
+			if(regconfig[0].rule[0].reg.test(phoneval)){
+				$("#reg_phone_text").hide();				
+			}else{			
+				$("#reg_phone_text").html(regconfig[0].rule[0].text).show();
+				$("#reg_phone").focus();
+				return false
+			};
+			if(regconfig[0].rule[1].reg.test(phoneval)){
+				$("#reg_phone_text").hide();				
+			}else{
+				$("#reg_phone").focus();
+				$("#reg_phone_text").html(regconfig[0].rule[1].text).show();
+				return false
+			};
+			if($(this).attr('able')=="able"){//发送
+				$(this).attr('able',"disable");
+				$(this).css('cursor','not-allowed');
+				$(this).html(mestime+"s");
+				mesdong=setInterval(function(){//倒计时
+					mestime-=1;
+					if(mestime<0){
+						$("#reg_mescode_btn").attr('able',"able");
+						$("#reg_mescode_btn").css('cursor','pointer');
+						$("#reg_mescode_btn").html('获取验证码');
+						mestime=60;
+						clearInterval(mesdong);
+					}else{
+						$("#reg_mescode_btn").html(mestime+"s");			
+					};
+				},1000);
+				
+				
+			}else{
+				
+			};
+		});	
+		//注册 
+		var regconfig=[
+				{eleinput:"reg_phone",eletext:"reg_phone_text",rule:[{reg:/^.+$/,text:'手机号不能为空'},{reg:/^1[34578]\d{9}$/,text:'手机号格式错误'}]},
+				{eleinput:"reg_password",eletext:"reg_password_text",rule:[{reg:/^.+$/,text:'密码不能为空'},{reg:/^.{6,10}$/,text:'密码在6-10位之间'}]},
+				{eleinput:"reg_mescode",eletext:"reg_mescode_text",rule:[{reg:/^.+$/,text:'短信验证码不能为空'},{reg:/^[0-9]{6}$/,text:'输入6位短信验证码'}]}
+			];
+		tbdValidate(
+			regconfig,
+			{
+				elesubmit:"reg_submit",
+				funsubmit:function(){	
+					
+					alert("成功");				
+				},
+				funerr:function(){
+		
+				},
+               
+	            funerrlist:function(errlist){
+	                $('#'+ errlist[0]).focus();
+	            }	
+			}
+		);	
+		//end	
+
+    class Register{
+        constructor(){
+            this.url = "http://www.liyangyf.com/ctrl/register.php";
+
+            this.init();
+        }
+        init(){
+            var that = this;
+            $("#reg_submit").click(function(){
+                that.load()
+            })
+        }
+        load(){
+            $.ajax({
+                url:this.url,
+                data:{
+                    tel:$("#reg_phone").val(),
+                    pass:$("#reg_password").val()
+                },
+                success:function(res){
+                    switch(res){
+                        case "0":
+                            $("#msg").html("重名");
+                            break;
+                        case "1":
+                            $("#msg").html("成功，3秒周跳转到登录");
+                            setTimeout(() => {
+                                location.href = "login.html";
+                            }, 3000);
+                            break;
+                        case "2":
+                            $("#msg").html("不允许为空");
+                            break;
+                    }
+                },
+                beforeSend:function(){
+                    $("#msg").html("<i class='fa fa-refresh fa-spin fa-fw'></i>")
+                }
+            })
+        }
+    }
+
+    new Register()
+</script>
+</html>

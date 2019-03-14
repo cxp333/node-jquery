@@ -1,0 +1,210 @@
+	
+			#magnifier {
+			  position: relative;
+			  width: 450px;
+			  margin: 120px;
+			}
+			.small-box {
+			  position: relative;
+			  width: 450px;
+			  height: 450px;
+			  margin-bottom: 20px;
+			  border: 1px solid #eee;
+			}
+			.small-box img {
+			  display: block;
+			}
+			.small-box .hover {
+			  display: none;
+			  position: absolute;
+			  left: 0;
+			  top: 0;
+			  width: 200px;
+			  height: 200px;
+			  border: 1px solid #aaa;
+			  background: #0099ff;
+			  opacity: .5;
+			  filter: alpha(opacity: 50);
+			  cursor: move;
+			}
+			.thumbnail-box {
+			  position: relative;
+			  width: 100%;
+			}
+			.thumbnail-box .btn {
+			  position: absolute;
+			  top: 50%;
+			  width: 22px;
+			  height: 32px;
+			  margin-top: -16px;
+			}
+			.thumbnail-box .btn-prev {
+			  left: 0;
+			  background: url(images/btn_prev.png) no-repeat;
+			}
+			.thumbnail-box .btn-next {
+			  right: 0;
+			  background: url(images/btn_next.png) no-repeat;
+			}
+			.thumbnail-box .list {
+			  overflow: hidden;
+			  width: 390px;
+			  margin: 0 auto;
+			}
+			.thumbnail-box .wrapper {
+			  width: 100000px;
+			}
+			.thumbnail-box .list .item {
+			  float: left;
+			  margin: 0 10px;
+			}
+			
+			.thumbnail-box .list .item img {
+			  border: 2px solid #fff;
+			}
+			.thumbnail-box .list .item-cur img {
+			  border: 2px solid #e53e41;
+			}
+			.big-box {
+			  display: none;
+			  overflow: hidden;
+			  position: absolute;
+			  left: 451px;
+			  top: 0;
+			  width: 540px;
+			  height: 540px;
+			  border: 1px solid #e4e4e4;
+				z-index: 9;
+			}
+			.big-box img {
+			  display: block;
+			}
+
+			.dlzhuce{display: none;}
+			 .tou {
+			  width: 360px;
+			  height: 53px;
+			  border-bottom: 1px solid #ddd;
+			  padding-top: 16px;
+			}
+	.tou .deng {
+			  width: 176px;
+			  font-size: 18px;
+			  font-weight: 550;
+			  color: #333;
+			  text-align: center;
+			}
+			#dl{background: white;padding-top:20px}
+			
+			  .dl_btn {
+			  margin-top: 12px;
+			  width: 260px;
+			  height: 35px;
+			  background: #E31436;
+			  text-align: center;
+			  color: #fff;
+			  line-height: 35px;
+			  font-size: 14px;
+			  margin-bottom: 10px;
+				margin-left: 30px;
+			}
+			
+			.tel,.verty{
+							overflow:hidden;
+							width:260px;
+							height: 40px;
+							border:1px solid black;
+							margin-bottom: 10px;
+							margin-left: 30px;}
+						
+			.c_code_msg{
+							width:100px;
+							height: 39px;
+							border: none;}
+			.dlzhuce{
+							width: 360px;
+							height: 330px;
+							border: 1px solid #ECECEC;
+							
+							}
+
+  .wz {
+  width: 580px;
+	font:16px/24px "";}}
+}
+
+ .wz .tou {
+  font-size: 18px;
+  color: #999;
+}
+
+ .wz  .content {
+font:700 18px/32px"";color: #303030 ;
+  margin-top: 10px;
+}
+ .wz  h3{text-indent: 4px;}
+ .wz .jia {
+  width: 580px;
+  height: 80px;
+  border: 1px solid #ddd;
+  background: #F9F9F9;
+  color: #999;
+  font-size: 12px;
+  padding: 15px 0 0 11px;
+  margin-bottom: 14px;
+}
+
+ .wz .jia .p1 .xianjia {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 14px 0 50px;
+  color:darkred;
+}
+
+ .wz .p2 {
+  padding: 5px 0 0 80px;
+  color: #333;
+}
+
+
+  .wz .p4 {
+  font-size: 14px;
+  padding-left: 11px;
+  margin-bottom: 14px;
+}
+ .wz .maijia {
+	font:700 20px/50px""; 
+	text-align:center;
+	overflow: hidden;
+	}
+  .wz .maijia .limai {
+	float: left;
+  width: 162px;
+  height: 50px;
+  border: 2px solid #E31436;
+  background:palevioletred;
+
+  
+}
+
+  .wz .maijia .jiacar {
+	float: left;
+  width: 162px;
+  height: 50px;
+  background: red;
+	margin:0 40px;
+	color: white;
+
+ 
+}
+
+ .wz .maijia .shou {
+  color: #666;
+  font-size: 24px;
+
+}
+
+
+
+
+

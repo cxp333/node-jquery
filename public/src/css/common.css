@@ -1,0 +1,71 @@
+/* 
+* @Author: Marte
+* @Date:   2017-12-23 09:57:42
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-04-15 14:38:57
+*/
+/* 
+* @Author: Marte
+* @Date:   2017-12-22 16:59:15
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-12-22 19:12:31
+*/
+@charset "UTF-8";
+/*css 初始化 */
+*{ margin:0; padding:0; }
+fieldset, img/* ,input */,button { border:0 none; padding:0;margin:0;outline-style:none; }   
+ul, ol { list-style:none; }
+
+select, input { vertical-align:middle;}
+
+textarea { resize:none; }
+img {border:0; vertical-align:middle; }  
+
+table { border-collapse:collapse; }
+
+
+.clearfix:after{
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+    overflow:hidden;
+    visibility: hidden;
+    zoom:1;
+}
+a {text-decoration:none; color: #000000;}
+
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:1em;}  
+i,em{font-style:normal;text-decoration:none;}
+
+
+
+.container {  /*版心 提取 */
+    width: 1098px;
+    margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.al {
+    text-align:left;
+}
+.ac {
+    text-align:center;
+}
+.ar {
+    text-align:right;
+}
+.hide {
+    display:none;
+}
+.font12{ font-size: 12px;}
+.font14{ font-size: 14px;}
+.font16{ font-size: 16px;}
+*{box-sizing: border-box;}
+.t_xiding{position:fixed;top:0;z-index:1000;background:#fff;width:100%;}
+.xixia{position:fixed;bottom:0;z-index:776;}
+.xiding{position:fixed;top:80px;z-index:1000;}

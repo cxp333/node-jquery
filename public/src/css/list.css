@@ -1,0 +1,481 @@
+#Main {
+  background: #F3F3F3;
+  padding-bottom: 77px;
+  cursor: default;
+}
+
+#Main a {
+  color: #333;
+}
+
+#Main .box1 {
+  height: 44px;
+  line-height: 44px;
+  color: #333;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+#Main .box1 a {
+  padding: 0 5px;
+}
+
+#Main .box1 .x_shou {
+  width: 135px;
+  height: 22px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+#Main .box1 .fd {
+  position: absolute;
+  left: 280px;
+  top: 18px;
+  color: #ccc;
+}
+
+#Main .box1 .sp {
+  display: inline-block;
+  padding-left: 10px;
+  color: #999;
+}
+
+#Main .box2 {
+  background: #fff;
+  font-size: 12px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+#Main .box2 .yi1 {
+  height: 59px;
+}
+
+#Main .box2 .yi1 span:first-child {
+  height: 58px;
+}
+
+#Main .box2 .yi2 span:first-child {
+  height: 38px;
+}
+
+#Main .box2 .yi3 span:first-child {
+  height: 36px;
+}
+
+#Main .box2 .yi5 span:first-child {
+  height: 38px;
+}
+
+#Main .box2 .yi6 {
+  height: 40px;
+}
+
+#Main .box2 .yi6 .ber {
+  margin-left: 21px;
+  padding: 0 5px;
+}
+
+#Main .box2 .yi6 span:first-child {
+  height: 40px;
+}
+
+#Main .box2 .yicheng {
+  float: left;
+  border-bottom: 1px solid #eee;
+  width: 1090px;
+  color: #333;
+}
+
+#Main .box2 .yicheng span:first-child {
+  display: inline-block;
+  width: 110px;
+  background: #F8F8F8;
+  padding: 11px 0 0 16px;
+  color: #666;
+}
+
+#Main .box2 .yicheng .ercheng {
+  vertical-align: top;
+  padding: 11px 0 0 20px;
+  display: inline-block;
+  width: 859px;
+}
+
+#Main .box2 .yicheng .ercheng li {
+  float: left;
+  width: 138px;
+  line-height: 25px;
+}
+
+#Main .box2 .yicheng .duoxuan {
+  width: 47px;
+  height: 20px;
+  border: 1px solid #eee;
+  margin-right: 15px;
+  padding: 2px 5px;
+}
+
+#Main .box2 .yi4 span:first-child {
+  height: 36px;
+}
+
+#Main .box2 .yi4 .ercheng li {
+  width: 83px;
+}
+
+#Main .box3 {
+  width: 1090px;
+  height: 36px;
+  line-height: 36px;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+#Main .box3 .zh {
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+#Main .box3 .zh li {
+  float: left;
+  padding: 0 20px;
+  border-right: 1px solid #ddd;
+}
+
+#Main .box3 .zh li .jian {
+  display: none;
+}
+
+#Main .box3 .shd {
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+#Main .box3 .jiawei {
+  width: 40px;
+  height: 18px;
+  border: 1px solid #ddd;
+  padding: 2px 0 0 3px;
+}
+
+#Main .box3 .dizhi {
+  width: 140px;
+  height: 20px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  padding: 3px 5px;
+  margin: 0 10px;
+}
+
+#Main .box3 .fuxuan {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ddd;
+  margin: 0 8px 0 10px;
+}
+
+#Main .list {
+
+  overflow: hidden;
+}
+
+#Main .list li:nth-child(4n) {
+  margin: 0;
+}
+
+#Main .list li {
+  width: 263px;
+	height: 280px;
+  background: #fff;
+  font-size: 12px;
+  line-height: 22px;
+  float: left;
+  margin: 0 12px 14px 0;
+  position: relative;
+}
+
+#Main .list li img {
+  width: 260px;
+  height: 262px;
+}
+
+#Main .list li .hezi {
+  padding: 0 13px;
+}
+
+#Main .list li .p1 .xianjia {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #E31436;
+}
+
+#Main .list li .p1 .yuanjia {
+  color: #999;
+}
+
+#Main .list li .p2 {
+  color: #333;
+  height: 22px;
+  overflow: hidden;
+}
+
+#Main .list li .p2:hover {
+  color: #e31436;
+  text-decoration: underline;
+}
+
+#Main .list li .ziying {
+  width: 33px;
+  height: 17px;
+  border: 1px solid #E31436;
+  color: #E31436;
+  padding: 0 3px;
+  border-radius: 3px;
+  margin-right: 4px;
+}
+
+#Main .list li .mj {
+  background: #E31436;
+  color: #fff;
+  border-radius: 3px;
+  padding: 0 3px;
+  margin-right: 4px;
+}
+
+#Main .yema {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 20px 0 30px 0;
+}
+
+#Main .yema .yemali {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#Main .yema .ac {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  color: #333;
+  margin-right: 5px;
+}
+
+#Main .yema .sx {
+  display: inline-block;
+  vertical-align: top;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+#Main .yema .active {
+  background: #E31436;
+  color: #fff;
+}
+
+#Main .box0 {
+  line-height: 56px;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+#Main .box0 .da {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+}
+
+#Main .box0 .dan {
+  color: #999;
+  margin: 0 10px;
+}
+
+#Main .cai {
+  height: 312px;
+  overflow: hidden;
+}
+
+#Main .cai ul li {
+  float: left;
+  width: 206px;
+  height: 306px;
+  border: 1px solid #eee;
+  margin-right: 15px;
+  background: #fff;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+
+#Main .cai ul li:last-child {
+  margin: 0;
+}
+
+#Main .cai ul img {
+  width: 204px;
+  height: 204px;
+}
+
+#Main .cai ul .p1 {
+  height: 35px;
+  overflow: hidden;
+}
+
+#Main .cai ul .p2 {
+  padding: 14px 17px;
+}
+
+#Main .cai ul .p2 .xianjia {
+  color: #E31436;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+#Main .cai ul .p2 .yuanjia {
+  font-size: 12px;
+  color: #999;
+}
+
+#Main .cai ul .pl {
+  color: #999;
+  line-height: 30px;
+}
+
+#Header .qiangou {
+  top: 213px;
+}
+
+			.pagination{
+				position: absolute;
+			top:2300px;
+			left:550px;}
+			.pagination a {
+			    text-decoration: none;
+				border: 1px solid #AAE;
+				color: #15B;
+			}
+			
+			.pagination a, .pagination span {
+			    display: inline-block;
+			    padding: 0.1em 0.4em;
+			    margin-right: 5px;
+				margin-bottom: 5px;
+			}
+			
+			.pagination .current {
+			    background: #26B;
+			    color: #fff;
+				border: 1px solid #AAE;
+			}
+			
+			.pagination .current.prev, .pagination .current.next{
+				color:#999;
+				border-color:#999;
+				background:#fff;
+			}
+			
+			
+			
+		    #list {
+		        width: 1000px;
+				height: 1700px;
+		        margin: 10px auto;
+		    }
+			
+		    #list ul {
+		        list-style: none;
+		    }
+			
+		    #list ul li {
+		        width: 240px;
+		        height: 280px;
+		        margin-left: 8px;
+		        margin-top: 25px;
+		        margin-bottom: 5px;
+		        position: relative;
+		        float: left;
+				border: 1px solid #ECECEC;
+		    }
+			
+		    #list ul li div.img {
+		        padding: 4px;
+		        
+		        
+		      
+		        margin-top: 10px;
+		    }
+			
+		    #list ul li div img {
+		        width: 230px;
+		        height: 180px;
+		    }
+			
+		    #list ul li div.detail {
+		        margin: 5px;
+		        color: #559999;
+		        float: left;
+		        width: 240px;
+		    }
+			
+		    #list ul li span.price {
+		        float: right;
+		        color: #cc0033;;
+		        margin-right: 8px;
+				
+		    }
+			
+		    #setPageDiv {
+		        clear: left;
+		        width: 1000px;
+		        margin: 10px auto;
+		    }
+			
+		    .shopping {
+		        position: fixed;
+		        height: 50px;
+		        width: 200px;
+		        right: 0px;
+		        top: 15px;
+		    }
+			
+		    .shopping-buy-btn {
+		      
+		        
+		        color: #cc0033;
+		        font-size: small;
+		        border-radius: 3px;
+		    
+			
+		    }
+			
+		    .shopping span.showNum {
+		        position: absolute;
+		        left: 8px;
+		        top: -8px;
+		        background-color: #f69;
+		        color: #FFFFFF;
+		        font-size: large;
+		        width: 20px;
+		        height: 15px;
+		        border-radius: 20px;
+		        text-align: center;
+		    }

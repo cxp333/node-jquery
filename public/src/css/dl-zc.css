@@ -1,0 +1,73 @@
+#dl_main{
+  height: 600px;
+  background: #F8F8F8;
+  padding: 45px 0 0 140px;
+  overflow: hidden;
+  cursor: default;
+}
+
+#dl_main .ts {
+  color: red;
+  visibility: hidden;
+}
+
+
+#dl_main .tou {
+  width: 360px;
+  height: 53px;
+  border-bottom: 1px solid #ddd;
+  padding-top: 16px;
+}
+
+#dl_main .tou .deng {
+  width: 176px;
+  font-size: 18px;
+  font-weight: 550;
+  color: #333;
+  text-align: center;
+  
+}
+
+#dl_main .tou .sjh{color: red;}
+#dl_main  .dl_btn {
+  margin-top: 12px;
+  width: 260px;
+  height: 35px;
+  background: #E31436;
+  text-align: center;
+  color: #fff;
+  line-height: 35px;
+  font-size: 14px;
+  margin-bottom: 10px;
+	margin-left: 30px;
+}
+
+.tel{
+				overflow:hidden;
+				width:260px;
+				height: 30px;
+				border:1px solid black;
+				margin:10px 30px;}
+.verty{
+				overflow:hidden;
+				width:260px;
+				height: 30px;
+				border:1px solid black;
+				margin:10px 30px;}
+			
+.c_code_msg{
+				width:100px;
+				height: 39px;
+				border: none;}
+.dlzhuce{
+				width: 360px;
+				height: 400px;
+			
+				
+				}
+.denglu{
+	width: 260px;
+	height: 40px;
+	margin: 20px auto;
+	
+}

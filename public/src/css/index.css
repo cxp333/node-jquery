@@ -1,0 +1,236 @@
+#Main {
+  padding-bottom: 80px;
+  background: #F6F6F6;
+  position: relative;
+  cursor: default;
+}
+
+#Main .zuolan {
+	display: none;
+  width: 100px;
+  height:380px;
+  border: 1px solid #EEEEEE;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  position: fixed;
+  left: 10px;
+  top: 220px;
+}
+#Main .zuolan .active{background: orangered;color:whitesmoke;}
+
+#Main .zuolan li {
+  border-bottom: 1px solid #F2F2F2;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+#Main .zuolan li:last-child {
+  border-bottom: 0;
+}
+
+#Main .zuolan img {
+  width: 80px;
+}
+
+#Main  #hongbao{
+	height: 500px;
+	text-align: center;
+	}
+#main h4{
+	background: red;
+	}
+
+
+#Main .box1 {
+	background: url(https://haitao.nosdn1.127.net/442ebf91-a261-4fdc-96b0-915776551eaeT1901221747_1920_332.jpg?imageView&thumbnail=1920x332&quality=95&type=webp);
+  height: 300px;
+  margin-top:20px;
+  background-position: -250px ;
+}
+
+
+
+#Main .tip {
+	height: 60px;
+  font:700 24px/56px "" ;
+	color: #FFFFFF;
+	line-height: 60px;
+
+
+}
+
+#Main .tip .container-red {
+   width:1098px;
+	 margin: 10px auto;
+	 background: red;
+	 text-align: center;
+}
+#Main .tip .container-red p{
+	 margin-left: 30px;}
+
+#Main .list{
+	
+	height:870px;}
+#Main .list .container .list-t1{
+	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 900px;
+	margin-top:10px;
+	}
+	#Main .list .container .list-t1 img{width:194px;height: 190px;}
+#Main .list .container .list-t1 li{
+
+	width:194px;
+	height:279px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  overflow: hidden;
+	background: #FFFFFF;
+
+	
+}
+#Main .list .container .list-t1 li p{
+		width:194px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		
+}
+
+#Main .list .container .list-t1 li:hover p{
+		width:194px;
+	  overflow:visible;
+		white-space:normal
+}
+.selected{
+	border: 1px solid red;
+	width:194px;
+	height:279px;
+
+}
+ #Main .list .list-t1 li .buy {
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+ 
+}
+#Main .list .list-t1 .buy a{
+	width:40px;
+	height:20px;
+	background: red;
+	}
+	
+	
+#Main .box0 {
+  line-height: 56px;
+  font-size: 13px;
+  overflow: hidden;
+	margin-top: 20px;
+}
+
+#Main .box0 .da {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+}
+
+#Main .box0 .dan {
+  color: #999;
+  margin: 0 10px;
+}
+#Main .box7 {
+  height: 273px;
+  margin:30px;
+  overflow: hidden;
+}
+
+#Main .box7 .flex-direction-nav {
+  display: none;
+}
+
+#Main .box7 .t1 {
+  width: 180px;
+  height: 270px;
+}
+
+#Main .box7 .t1 img {
+  width: 100%;
+  height: 100%;
+}
+
+#Main .box7 .tul {
+  width: 908px;
+}
+
+#Main .box7 .tul li {
+  float: left;
+  width: 181px;
+  height: 135px;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  background: #fff;
+  text-align: center;
+  padding-top: 11px;
+  position: relative;
+}
+
+#Main .box7 .tul li img {
+  width: 91px;
+  height: 91px;
+}
+
+#Main .box7 .tul li .zi {
+  font-size: 12px;
+  line-height: 34px;
+  color: #666;
+}
+
+#Main .box7 .tul li .zhezhao {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+}
+
+#Main .box7 .tul li .zhezhao .guan {
+  width: 60px;
+  height: 18px;
+  border: 1px solid #fff;
+  line-height: 18px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+
+#Main .box7 .tul li .zhezhao .jinru {
+  width: 77px;
+  height: 20px;
+  background: #e31436;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 40px;
+  line-height: 20px;
+}
+
+#Main .box7 .tul li:hover .zhezhao {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+
+#Main #zheng{
+	margin-top:10px auto;}
+#Main #zheng img{
+	width:1098px;
+	}
+	
+.top-t{background-image: url(../images/online20190250bb45.jpg);}

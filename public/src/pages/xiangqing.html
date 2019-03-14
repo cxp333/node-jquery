@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/headerfooter.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/xiangqingye.css"/>
+		
+		
+	</head>
+	<body>
+		<header id="Header">
+		</header>
+		<div class="main">
+			
+              <div id="magnifier">
+                <div class="small-box">
+                  <img src="../images/small_1.jpg" alt="#">
+                  <span class="hover"></span>
+                </div>
+                <div class="thumbnail-box">
+                  <a href="javascript:;" class="btn btn-prev"></a>
+                  <a href="javascript:;" class="btn btn-next"></a>
+                  <div class="list">
+                    <ul class="wrapper">
+                      <li class="item item-cur" data-src="../images/small_1.jpg"><img src="../images/thumbnail_1.jpg" alt="#"></li>
+                      <li class="item" data-src="../images/small_2.jpg"><img src="../images/thumbnail_2.jpg" alt="#"></li>
+                      <li class="item" data-src="../images/small_3.jpg"><img src="../images/thumbnail_3.jpg" alt="#"></li>
+                      <li class="item" data-src="../images/small_4.jpg"><img src="../images/thumbnail_4.jpg" alt="#"></li>
+                      <li class="item" data-src="../images/small_5.jpg"><img src="../images/thumbnail_5.jpg" alt="#"></li>
+                      <li class="item" data-src="../images/small_6.jpg"><img src="../images/thumbnail_6.jpg" alt="#"></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="big-box">
+                  <img src="../images/big_1.jpg" alt="#">
+                </div>
+              </div>
+			   
+			    <div class="wz" style="position: absolute;top:300px;left:750px">
+			        <div class="tou">
+			            美国 | Apple 苹果 <img src="../images/zijing.png" class="fr" alt="" />
+			        </div>
+			        <h2 class="content">Apple 苹果 iPhone XR (A2108) 128GB 黑色 移动联通电信4G手机 双卡双待
+              </h2>
+							<h3>【国行正品可开票】A12仿生芯片，6.1英寸大屏全面屏，面容ID，原深感摄像头！iPhone终于双卡双待了，商务、生活轻松切换！【下方服务可选购价值189元延保服务一年】</h3>
+			        <div class="jia">
+			            <p class="p1">售价<span class="xianjia">￥5799.00</span><span class="yuanjia">参考价 ￥6999.00</span></p>
+			        </div>
+			        <p class="p2"><span class="huo">运费&nbsp;&nbsp;8元起</span> <span class="ns"></span></p>
+			        <p class="p4"><span class="shuo">服务说明</span><span class="ka"><i class="fa fa-check-circle-o gou" aria-hidden="true"></i>支持7天无忧退货</span></p>
+			        <div class="maijia">
+			            <div class="limai ">立即购买</div>
+			            <div class="jiacar "><i class="fa fa-shopping-cart fa-lg" aria-hidden="true" style="margin-right:10px;"></i>加入购物车</div>
+			            <span class="shou "><i class="fa fa-heart-o" aria-hidden="true" style="color:#E31436;margin-right:5px;"></i>收藏</span>
+			        </div>
+			        <img src="../images/xing.png" alt="" style="margin-top:14px;"/>
+			       
+			    </div>
+			</div>
+			
+					
+					<div class="dlzhuce" style="position: absolute;top:500px;left: 800px;" >
+					
+						<div class="tou " style="display: inline-block;background: #ECECEC;">
+							<div class="deng sjh fl" style="color: red;">手机号登录</div>
+							<div class="deng yx fl">邮箱登录</div>
+						</div>
+						<div id="dl">
+							<p>
+								<input class="tel" type="text" name="user" id="" value="" placeholder="请输入手机号" />
+							</p>
+							<p>
+								<input class="tel" type="text" name="pass" id="" value="" placeholder="请输入密码" />
+							</p>
+							
+							<p class="verty">
+								<input  class="c_code_msg" type="text" style="margin-right: 10px;" placeholder="请输入验证码" />
+								<span class="msgs">获取短信验证码</span>
+							</p>
+						</div>
+						
+						<button class="dl_btn">登录</button>
+						<p id="msg">
+							
+						</p>
+					
+					
+				</div>
+		
+		<div class="xiangqing" style="margin: 20px 30px;">
+			
+				<img src="../images/xiangqing.png" >
+		
+			
+		   
+			
+		 
+				
+		</div>
+		           
+		           
+	
+		       
+		
+		  
+		
+		<footer id="Footer"></footer>
+		
+		
+	</body>
+	
+	<script src="../lib/jquery-1.9.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/magnifier.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		
+		
+		$(document).ready(function(){
+			$('#Header').load('header.html');
+			$('#Footer').load('footer.html');
+		
+		
+		  $(function () {
+		 
+		   $('#magnifier').magnifier();
+		 
+		 });
+		
+		
+	
+		
+						
+			$(".jiacar").click(function(){
+			$(".dlzhuce").show().css({"margin":"30px auto"})		
+						})
+		});
+		
+	</script>
+</html>
